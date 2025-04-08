@@ -9,8 +9,8 @@ from aiogram.filters import CommandStart, Command
 
 from yt_utils import download_audio  # Importing the download_audio function from yt_utils
 
-from bot import config
-from bot.channel_utilis import is_subscribed
+import config
+from channel_utilis import is_subscribed
 
 
 dp = Dispatcher()

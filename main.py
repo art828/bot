@@ -9,6 +9,7 @@ from aiogram.filters import CommandStart, Command
 
 from yt_utils import download_audio
 from channel_utilis import is_subscribed
+from background import keep_alive
 import config
 
 dp = Dispatcher()
@@ -72,4 +73,5 @@ async def main():
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
+    keep_alive()
     asyncio.run(main())
